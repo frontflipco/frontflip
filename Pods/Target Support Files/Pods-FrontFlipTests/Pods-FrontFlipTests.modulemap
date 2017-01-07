@@ -1,0 +1,6 @@
+framework module Pods_FrontFlipTests {
+  umbrella header "Pods-FrontFlipTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

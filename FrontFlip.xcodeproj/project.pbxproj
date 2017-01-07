@@ -8,12 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		68D1806D1E2191A6000A2AB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D1806C1E2191A6000A2AB7 /* AppDelegate.swift */; };
-		68D1806F1E2191A6000A2AB7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D1806E1E2191A6000A2AB7 /* ViewController.swift */; };
+		68D1806F1E2191A6000A2AB7 /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D1806E1E2191A6000A2AB7 /* OnboardingVC.swift */; };
 		68D180721E2191A6000A2AB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68D180701E2191A6000A2AB7 /* Main.storyboard */; };
 		68D180741E2191A6000A2AB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68D180731E2191A6000A2AB7 /* Assets.xcassets */; };
 		68D180771E2191A6000A2AB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68D180751E2191A6000A2AB7 /* LaunchScreen.storyboard */; };
 		68D180821E2191A6000A2AB7 /* FrontFlipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D180811E2191A6000A2AB7 /* FrontFlipTests.swift */; };
 		68D1808D1E2191A6000A2AB7 /* FrontFlipUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D1808C1E2191A6000A2AB7 /* FrontFlipUITests.swift */; };
+		68D1809B1E21920B000A2AB7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 68D1809A1E21920B000A2AB7 /* GoogleService-Info.plist */; };
+		68D180A11E219440000A2AB7 /* PaperOnboarding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68D180A01E219440000A2AB7 /* PaperOnboarding.framework */; };
+		68D180A21E219440000A2AB7 /* PaperOnboarding.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 68D180A01E219440000A2AB7 /* PaperOnboarding.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		68D180A51E219497000A2AB7 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D180A41E219497000A2AB7 /* OnboardingView.swift */; };
+		68D180A71E21988B000A2AB7 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D180A61E21988B000A2AB7 /* LoginVC.swift */; };
+		7AE3F7D822CA18368B8C5027 /* Pods_FrontFlip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97E4C15D10EE105DBE55724E /* Pods_FrontFlip.framework */; };
+		82D0AB3AACA21F86BFDC20CE /* Pods_FrontFlipTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F3FF4E15FCF299170F6C023 /* Pods_FrontFlipTests.framework */; };
+		8A39D9D1E409E8AC3A8ADF2D /* Pods_FrontFlipUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE1237A67D5B644DF2B630AE /* Pods_FrontFlipUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,10 +41,28 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		68D180A31E219440000A2AB7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				68D180A21E219440000A2AB7 /* PaperOnboarding.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0B796C284D1A2DEE57A87405 /* Pods-FrontFlip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrontFlip.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FrontFlip/Pods-FrontFlip.debug.xcconfig"; sourceTree = "<group>"; };
+		2638B3B0A6384966553A8822 /* Pods-FrontFlipTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrontFlipTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FrontFlipTests/Pods-FrontFlipTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5F3FF4E15FCF299170F6C023 /* Pods_FrontFlipTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FrontFlipTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		647C497F645378159492DDA0 /* Pods-FrontFlipUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrontFlipUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FrontFlipUITests/Pods-FrontFlipUITests.release.xcconfig"; sourceTree = "<group>"; };
 		68D180691E2191A6000A2AB7 /* FrontFlip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FrontFlip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68D1806C1E2191A6000A2AB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		68D1806E1E2191A6000A2AB7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		68D1806E1E2191A6000A2AB7 /* OnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVC.swift; sourceTree = "<group>"; };
 		68D180711E2191A6000A2AB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		68D180731E2191A6000A2AB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		68D180761E2191A6000A2AB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +73,15 @@
 		68D180881E2191A6000A2AB7 /* FrontFlipUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrontFlipUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		68D1808C1E2191A6000A2AB7 /* FrontFlipUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrontFlipUITests.swift; sourceTree = "<group>"; };
 		68D1808E1E2191A6000A2AB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68D1809A1E21920B000A2AB7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		68D180A01E219440000A2AB7 /* PaperOnboarding.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PaperOnboarding.framework; path = Carthage/Build/iOS/PaperOnboarding.framework; sourceTree = "<group>"; };
+		68D180A41E219497000A2AB7 /* OnboardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		68D180A61E21988B000A2AB7 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		7DF93F65C7FA563F8F5AE817 /* Pods-FrontFlipTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrontFlipTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FrontFlipTests/Pods-FrontFlipTests.release.xcconfig"; sourceTree = "<group>"; };
+		8081522575609A12EDF6D532 /* Pods-FrontFlipUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrontFlipUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FrontFlipUITests/Pods-FrontFlipUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		932F1A0E0F451B139A6F590D /* Pods-FrontFlip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrontFlip.release.xcconfig"; path = "Pods/Target Support Files/Pods-FrontFlip/Pods-FrontFlip.release.xcconfig"; sourceTree = "<group>"; };
+		97E4C15D10EE105DBE55724E /* Pods_FrontFlip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FrontFlip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE1237A67D5B644DF2B630AE /* Pods_FrontFlipUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FrontFlipUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +89,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68D180A11E219440000A2AB7 /* PaperOnboarding.framework in Frameworks */,
+				7AE3F7D822CA18368B8C5027 /* Pods_FrontFlip.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82D0AB3AACA21F86BFDC20CE /* Pods_FrontFlipTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,19 +106,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A39D9D1E409E8AC3A8ADF2D /* Pods_FrontFlipUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F05C027B434DF70A5D28136 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0B796C284D1A2DEE57A87405 /* Pods-FrontFlip.debug.xcconfig */,
+				932F1A0E0F451B139A6F590D /* Pods-FrontFlip.release.xcconfig */,
+				2638B3B0A6384966553A8822 /* Pods-FrontFlipTests.debug.xcconfig */,
+				7DF93F65C7FA563F8F5AE817 /* Pods-FrontFlipTests.release.xcconfig */,
+				8081522575609A12EDF6D532 /* Pods-FrontFlipUITests.debug.xcconfig */,
+				647C497F645378159492DDA0 /* Pods-FrontFlipUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		68D180601E2191A5000A2AB7 = {
 			isa = PBXGroup;
 			children = (
+				68D180A01E219440000A2AB7 /* PaperOnboarding.framework */,
 				68D1806B1E2191A6000A2AB7 /* FrontFlip */,
 				68D180801E2191A6000A2AB7 /* FrontFlipTests */,
 				68D1808B1E2191A6000A2AB7 /* FrontFlipUITests */,
 				68D1806A1E2191A6000A2AB7 /* Products */,
+				1F05C027B434DF70A5D28136 /* Pods */,
+				827F34E73D2F5CF317465B8D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +152,10 @@
 		68D1806B1E2191A6000A2AB7 /* FrontFlip */ = {
 			isa = PBXGroup;
 			children = (
-				68D1806C1E2191A6000A2AB7 /* AppDelegate.swift */,
-				68D1806E1E2191A6000A2AB7 /* ViewController.swift */,
-				68D180701E2191A6000A2AB7 /* Main.storyboard */,
-				68D180731E2191A6000A2AB7 /* Assets.xcassets */,
-				68D180751E2191A6000A2AB7 /* LaunchScreen.storyboard */,
-				68D180781E2191A6000A2AB7 /* Info.plist */,
+				68D1809C1E219216000A2AB7 /* Model */,
+				68D1809E1E219227000A2AB7 /* View */,
+				68D1809D1E21921B000A2AB7 /* Controller */,
+				68D1809F1E21925E000A2AB7 /* Resources */,
 			);
 			path = FrontFlip;
 			sourceTree = "<group>";
@@ -125,6 +178,53 @@
 			path = FrontFlipUITests;
 			sourceTree = "<group>";
 		};
+		68D1809C1E219216000A2AB7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		68D1809D1E21921B000A2AB7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				68D1806C1E2191A6000A2AB7 /* AppDelegate.swift */,
+				68D1806E1E2191A6000A2AB7 /* OnboardingVC.swift */,
+				68D180A61E21988B000A2AB7 /* LoginVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		68D1809E1E219227000A2AB7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				68D180701E2191A6000A2AB7 /* Main.storyboard */,
+				68D180751E2191A6000A2AB7 /* LaunchScreen.storyboard */,
+				68D180A41E219497000A2AB7 /* OnboardingView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		68D1809F1E21925E000A2AB7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				68D180731E2191A6000A2AB7 /* Assets.xcassets */,
+				68D180781E2191A6000A2AB7 /* Info.plist */,
+				68D1809A1E21920B000A2AB7 /* GoogleService-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		827F34E73D2F5CF317465B8D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				97E4C15D10EE105DBE55724E /* Pods_FrontFlip.framework */,
+				5F3FF4E15FCF299170F6C023 /* Pods_FrontFlipTests.framework */,
+				BE1237A67D5B644DF2B630AE /* Pods_FrontFlipUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +232,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 68D180911E2191A6000A2AB7 /* Build configuration list for PBXNativeTarget "FrontFlip" */;
 			buildPhases = (
+				F7D77D1D67A90B31594EC32C /* [CP] Check Pods Manifest.lock */,
 				68D180651E2191A5000A2AB7 /* Sources */,
 				68D180661E2191A5000A2AB7 /* Frameworks */,
 				68D180671E2191A5000A2AB7 /* Resources */,
+				EEE42FF44242B6225A397878 /* [CP] Embed Pods Frameworks */,
+				A0556468E09917463A740EEE /* [CP] Copy Pods Resources */,
+				68D180A31E219440000A2AB7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,9 +253,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 68D180941E2191A6000A2AB7 /* Build configuration list for PBXNativeTarget "FrontFlipTests" */;
 			buildPhases = (
+				B9A9CF26C3A218ECD2DA6DFA /* [CP] Check Pods Manifest.lock */,
 				68D180791E2191A6000A2AB7 /* Sources */,
 				68D1807A1E2191A6000A2AB7 /* Frameworks */,
 				68D1807B1E2191A6000A2AB7 /* Resources */,
+				75D1689AFEB8159D701A08A5 /* [CP] Embed Pods Frameworks */,
+				C3B6CF112AA9D925161B1D60 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +274,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 68D180971E2191A6000A2AB7 /* Build configuration list for PBXNativeTarget "FrontFlipUITests" */;
 			buildPhases = (
+				734C6446DD71302F732975E8 /* [CP] Check Pods Manifest.lock */,
 				68D180841E2191A6000A2AB7 /* Sources */,
 				68D180851E2191A6000A2AB7 /* Frameworks */,
 				68D180861E2191A6000A2AB7 /* Resources */,
+				FFD9392FCAF8B9CDCE3DDB56 /* [CP] Embed Pods Frameworks */,
+				3BBBA7895E8C5F8DA425FBC4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -234,6 +344,7 @@
 			files = (
 				68D180771E2191A6000A2AB7 /* LaunchScreen.storyboard in Resources */,
 				68D180741E2191A6000A2AB7 /* Assets.xcassets in Resources */,
+				68D1809B1E21920B000A2AB7 /* GoogleService-Info.plist in Resources */,
 				68D180721E2191A6000A2AB7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,12 +365,152 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3BBBA7895E8C5F8DA425FBC4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FrontFlipUITests/Pods-FrontFlipUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		734C6446DD71302F732975E8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		75D1689AFEB8159D701A08A5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FrontFlipTests/Pods-FrontFlipTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0556468E09917463A740EEE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FrontFlip/Pods-FrontFlip-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9A9CF26C3A218ECD2DA6DFA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C3B6CF112AA9D925161B1D60 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FrontFlipTests/Pods-FrontFlipTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EEE42FF44242B6225A397878 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FrontFlip/Pods-FrontFlip-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7D77D1D67A90B31594EC32C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FFD9392FCAF8B9CDCE3DDB56 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FrontFlipUITests/Pods-FrontFlipUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		68D180651E2191A5000A2AB7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68D1806F1E2191A6000A2AB7 /* ViewController.swift in Sources */,
+				68D180A51E219497000A2AB7 /* OnboardingView.swift in Sources */,
+				68D1806F1E2191A6000A2AB7 /* OnboardingVC.swift in Sources */,
+				68D180A71E21988B000A2AB7 /* LoginVC.swift in Sources */,
 				68D1806D1E2191A6000A2AB7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -408,8 +659,13 @@
 		};
 		68D180921E2191A6000A2AB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B796C284D1A2DEE57A87405 /* Pods-FrontFlip.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = FrontFlip/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = frontflip.FrontFlip;
@@ -420,8 +676,13 @@
 		};
 		68D180931E2191A6000A2AB7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 932F1A0E0F451B139A6F590D /* Pods-FrontFlip.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = FrontFlip/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = frontflip.FrontFlip;
@@ -432,6 +693,7 @@
 		};
 		68D180951E2191A6000A2AB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2638B3B0A6384966553A8822 /* Pods-FrontFlipTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -446,6 +708,7 @@
 		};
 		68D180961E2191A6000A2AB7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DF93F65C7FA563F8F5AE817 /* Pods-FrontFlipTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -460,6 +723,7 @@
 		};
 		68D180981E2191A6000A2AB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8081522575609A12EDF6D532 /* Pods-FrontFlipUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = FrontFlipUITests/Info.plist;
@@ -473,6 +737,7 @@
 		};
 		68D180991E2191A6000A2AB7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 647C497F645378159492DDA0 /* Pods-FrontFlipUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = FrontFlipUITests/Info.plist;
@@ -503,6 +768,7 @@
 				68D180931E2191A6000A2AB7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		68D180941E2191A6000A2AB7 /* Build configuration list for PBXNativeTarget "FrontFlipTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +777,7 @@
 				68D180961E2191A6000A2AB7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		68D180971E2191A6000A2AB7 /* Build configuration list for PBXNativeTarget "FrontFlipUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +786,7 @@
 				68D180991E2191A6000A2AB7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

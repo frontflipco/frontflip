@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +16,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        
+        //Configuring Firbase Backend
+        FIRApp.configure()
+        
+        //Setting the initialViewController depedent on if the user has completed the Onboarding
+        window = UIWindow(frame: UIScreen.main.bounds)
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        var initalVC = sb.instantiateViewController(withIdentifier: "onboardingViewController")
+        let userDefaults = UserDefaults.standard
+        if userDefaults.bool(forKey: "OnboardingComplete") {
+            initalVC = sb.instantiateViewController(withIdentifier: "loginViewController")
+        }
+        window?.rootViewController = initalVC
+        window?.makeKeyAndVisible()
+        
+        
+
+        
+        
+        
         return true
     }
 
