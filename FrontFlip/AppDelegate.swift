@@ -27,7 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         var initalVC = sb.instantiateViewController(withIdentifier: "onboardingViewController")
         let userDefaults = UserDefaults.standard
         if userDefaults.bool(forKey: "OnboardingComplete") {
-            initalVC = sb.instantiateViewController(withIdentifier: "loginViewController")
+            initalVC = sb.instantiateViewController(withIdentifier: "introViewController")
         }
         window?.rootViewController = initalVC
         window?.makeKeyAndVisible()
