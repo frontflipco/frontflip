@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import SwiftKeychainWrapper
 
 class LoginVC: UIViewController {
     //OUTLETS
@@ -30,12 +31,28 @@ class LoginVC: UIViewController {
                     print("Menan: Login was successful using email")
                     if let user = user {
                         //TODO: Save the user to keychain and log him in.
+                        let uid = user.uid
+                        self.completeLogin(uid: uid)
                     }
                 } else {
+                    //TODO: Notify the user of the error
                     print("Menan: Login Unsuccessful: \(error)")
                 }
             })
         }
     }
+    
+    func completeLogin(uid: String) {
+        //Add user to the keychain
+        let saveSuccessful: Bool = KeychainWrapper.standard.set(uid, forKey: KEY_UID)
+        //Segue to the MainVC
+        performSegue(withIdentifier: GOTOMAIN, sender: nil)
+    }
+    
+    @IBAction func backBtnPressed(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    
 
 }

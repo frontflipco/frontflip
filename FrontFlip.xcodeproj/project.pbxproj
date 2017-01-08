@@ -25,6 +25,8 @@
 		68D180AE1E21F50F000A2AB7 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D180AD1E21F50F000A2AB7 /* LoginVC.swift */; };
 		68D180B01E21F521000A2AB7 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D180AF1E21F521000A2AB7 /* SignUpVC.swift */; };
 		68D180B21E21FB29000A2AB7 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D180B11E21FB29000A2AB7 /* DataService.swift */; };
+		68D180B41E220335000A2AB7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D180B31E220335000A2AB7 /* Constants.swift */; };
+		68D180B61E2213B0000A2AB7 /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D180B51E2213B0000A2AB7 /* ForgotPasswordVC.swift */; };
 		7AE3F7D822CA18368B8C5027 /* Pods_FrontFlip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97E4C15D10EE105DBE55724E /* Pods_FrontFlip.framework */; };
 		82D0AB3AACA21F86BFDC20CE /* Pods_FrontFlipTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F3FF4E15FCF299170F6C023 /* Pods_FrontFlipTests.framework */; };
 		8A39D9D1E409E8AC3A8ADF2D /* Pods_FrontFlipUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE1237A67D5B644DF2B630AE /* Pods_FrontFlipUITests.framework */; };
@@ -89,6 +91,8 @@
 		68D180AD1E21F50F000A2AB7 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		68D180AF1E21F521000A2AB7 /* SignUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		68D180B11E21FB29000A2AB7 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		68D180B31E220335000A2AB7 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		68D180B51E2213B0000A2AB7 /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
 		7DF93F65C7FA563F8F5AE817 /* Pods-FrontFlipTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrontFlipTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FrontFlipTests/Pods-FrontFlipTests.release.xcconfig"; sourceTree = "<group>"; };
 		8081522575609A12EDF6D532 /* Pods-FrontFlipUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrontFlipUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FrontFlipUITests/Pods-FrontFlipUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		932F1A0E0F451B139A6F590D /* Pods-FrontFlip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrontFlip.release.xcconfig"; path = "Pods/Target Support Files/Pods-FrontFlip/Pods-FrontFlip.release.xcconfig"; sourceTree = "<group>"; };
@@ -208,6 +212,7 @@
 				68D180A61E21988B000A2AB7 /* IntroVC.swift */,
 				68D180AD1E21F50F000A2AB7 /* LoginVC.swift */,
 				68D180AF1E21F521000A2AB7 /* SignUpVC.swift */,
+				68D180B51E2213B0000A2AB7 /* ForgotPasswordVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -229,6 +234,7 @@
 				68D180731E2191A6000A2AB7 /* Assets.xcassets */,
 				68D180781E2191A6000A2AB7 /* Info.plist */,
 				68D1809A1E21920B000A2AB7 /* GoogleService-Info.plist */,
+				68D180B31E220335000A2AB7 /* Constants.swift */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -530,10 +536,12 @@
 				68D180A51E219497000A2AB7 /* OnboardingView.swift in Sources */,
 				68D1806F1E2191A6000A2AB7 /* OnboardingVC.swift in Sources */,
 				68D180AE1E21F50F000A2AB7 /* LoginVC.swift in Sources */,
+				68D180B61E2213B0000A2AB7 /* ForgotPasswordVC.swift in Sources */,
 				68D180AC1E21F42C000A2AB7 /* MaterialTextField.swift in Sources */,
 				68D180A71E21988B000A2AB7 /* IntroVC.swift in Sources */,
 				68D1806D1E2191A6000A2AB7 /* AppDelegate.swift in Sources */,
 				68D180B21E21FB29000A2AB7 /* DataService.swift in Sources */,
+				68D180B41E220335000A2AB7 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

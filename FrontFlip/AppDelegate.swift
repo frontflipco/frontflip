@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import SwiftKeychainWrapper
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -26,17 +27,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let sb = UIStoryboard(name: "Main", bundle: nil)
         var initalVC = sb.instantiateViewController(withIdentifier: "onboardingViewController")
         let userDefaults = UserDefaults.standard
+        
+        //If Onboarding is finished load the intro VC
         if userDefaults.bool(forKey: "OnboardingComplete") {
             initalVC = sb.instantiateViewController(withIdentifier: "introViewController")
         }
+        
+        //If a user is logged in load the main VC
+        if let _ = KeychainWrapper.standard.string(forKey: KEY_UID) {
+            initalVC = sb.instantiateViewController(withIdentifier: "mainViewController")
+        }
+        
         window?.rootViewController = initalVC
         window?.makeKeyAndVisible()
-        
-        
 
-        
-        
-        
         return true
     }
 

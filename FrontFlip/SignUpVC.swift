@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import SwiftKeychainWrapper
 
 class SignUpVC: UIViewController {
 
@@ -24,7 +25,6 @@ class SignUpVC: UIViewController {
         // Do any additional setup after loading the view.
     }
 
- 
     //ACTIONS
     //Creating a user when signup is created
     @IBAction func signUpBtnPresssed(_ sender: Any) {
@@ -42,15 +42,31 @@ class SignUpVC: UIViewController {
                         
                     }
                 } else {
+                    //TODO: Notify the user of the error
                     print("Menan: Creating a user failed: \(error)")
                 }
             })
         }
     }
     
+    @IBAction func backBtnPressed(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    
     func completeSignUp(uid: String, userData: Dictionary <String, String>) {
+        //Add user fields to the database
         DataService.ds.createNewUserInDatabase(uid: uid, userData: userData)
-        //Add user to the keychain and segue to the MainVC
+        //Send User Email Vertification
+        FIRAuth.auth()?.currentUser?.sendEmailVerification(completion: { (error) in
+            if error != nil {
+                print("Menan: Error while sending confirmation email \(error)")
+            }
+        })
+        //Add user to the keychain
+        let saveSuccessful: Bool = KeychainWrapper.standard.set(uid, forKey: KEY_UID)
+        //TODO:Segue to the MainVC
+        performSegue(withIdentifier: GOTOMAIN, sender: nil)
     }
 
 

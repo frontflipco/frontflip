@@ -10,7 +10,7 @@ target 'FrontFlip' do
   pod 'Firebase/Database'
   pod 'Firebase/Auth'
   pod 'Firebase/Storage'
-  
+  pod 'SwiftKeychainWrapper' 
   target 'FrontFlipTests' do
     inherit! :search_paths
     # Pods for testing
