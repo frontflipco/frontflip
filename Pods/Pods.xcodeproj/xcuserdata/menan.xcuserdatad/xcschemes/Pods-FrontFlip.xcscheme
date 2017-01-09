@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "12D7CAEA337655574680B7B845CDFD92"
+               BlueprintIdentifier = "F484F4C3F4D6BEEC3920B592845CC965"
                BuildableName = "Pods_FrontFlip.framework"
                BlueprintName = "Pods-FrontFlip"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "12D7CAEA337655574680B7B845CDFD92"
+            BlueprintIdentifier = "F484F4C3F4D6BEEC3920B592845CC965"
             BuildableName = "Pods_FrontFlip.framework"
             BlueprintName = "Pods-FrontFlip"
             ReferencedContainer = "container:Pods.xcodeproj">

@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 import SwiftKeychainWrapper
+import FBSDKLoginKit
 
 class LoginVC: UIViewController {
     //OUTLETS
@@ -41,6 +42,39 @@ class LoginVC: UIViewController {
             })
         }
     }
+    
+    @IBAction func facebookBtnPressed(_ sender: Any) {
+        
+        let fbLoginManager = FBSDKLoginManager()
+        fbLoginManager.logIn(withReadPermissions: ["email"], from: self) { (result, error) in
+
+            if error != nil {
+                print("menan: Error Auth Facebook Login\(error)")
+            } else if (result?.isCancelled)! {
+                print("menan: FB Auth was cancelled by the user")
+            } else {
+                print("menan: FB Auth was successful")
+                let creditionals = FIRFacebookAuthProvider.credential(withAccessToken: FBSDKAccessToken.current().tokenString)
+                self.fireBaseAuth(creditionals: creditionals)
+            }
+            
+        }
+        
+    }
+    
+    func fireBaseAuth(creditionals: FIRAuthCredential) {
+        FIRAuth.auth()?.signIn(with: creditionals, completion: { (user, error) in
+            if error != nil {
+                print("menan: Firebase Auth ERROR")
+            }else {
+                print("menan: Firebase Auth Successful")
+                if let user = user {
+                    self.completeLogin(uid: user.uid)
+                }
+            }
+        })
+    }
+    
     
     func completeLogin(uid: String) {
         //Add user to the keychain

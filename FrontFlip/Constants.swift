@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import UIKit
 
 let KEY_UID = "uid"
 let GOTOMAIN = "goToMain"
+let SHADOW_GREY = CGFloat(255/157)
