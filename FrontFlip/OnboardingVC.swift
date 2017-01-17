@@ -43,23 +43,23 @@ class OnboardingVC: UIViewController, PaperOnboardingDelegate, PaperOnboardingDa
         let descriptionFont = UIFont(name: "AvenirNext-Regular", size: 20)!
         
         //Onboarding Item 1
-        let imageNameOne = "onboardingImg1"
-        let titleOne = "Onboarding Title One"
-        let descriptionOne = "This is the description for FrontFlip Onboarding screen 1"
+        let imageNameOne = "join"
+        let titleOne = "Join"
+        let descriptionOne = "Signup to become a FrontFlipper, its Free!"
         let iconNameOne = "iconNameOne"
         let colorOne = UIColor.yellow
         
         //Onboarding Item 2
-        let imageNameTwo = "onboardingImg2"
-        let titleTwo = "Onboarding Title Two"
-        let descriptionTwo = "This is the description for FrontFlip Onboarding screen 2"
+        let imageNameTwo = "heart"
+        let titleTwo = "Find Products You Love"
+        let descriptionTwo = "Look for products you want to promote on your social media. Request to promote only the products you love!"
         let iconNameTwo = "iconNameTwo"
         let colorTwo = UIColor.blue
         
         //Onboarding Item 3
-        let imageNameThree = "onboardingImg3"
-        let titleThree = "Onboarding Title Three"
-        let descriptionThree = "This is the description for FrontFlip Onboarding screen 3"
+        let imageNameThree = "money"
+        let titleThree = "Get Paid to Post"
+        let descriptionThree = "Get free products from brands you love and get paid!"
         let iconNameThree = "iconNameThree"
         let colorThree = UIColor.red
         

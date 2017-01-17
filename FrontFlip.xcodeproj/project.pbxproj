@@ -15,18 +15,17 @@
 		68D180821E2191A6000A2AB7 /* FrontFlipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D180811E2191A6000A2AB7 /* FrontFlipTests.swift */; };
 		68D1808D1E2191A6000A2AB7 /* FrontFlipUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D1808C1E2191A6000A2AB7 /* FrontFlipUITests.swift */; };
 		68D1809B1E21920B000A2AB7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 68D1809A1E21920B000A2AB7 /* GoogleService-Info.plist */; };
-		68D180A11E219440000A2AB7 /* PaperOnboarding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68D180A01E219440000A2AB7 /* PaperOnboarding.framework */; };
-		68D180A21E219440000A2AB7 /* PaperOnboarding.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 68D180A01E219440000A2AB7 /* PaperOnboarding.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		68D180A51E219497000A2AB7 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D180A41E219497000A2AB7 /* OnboardingView.swift */; };
 		68D180A71E21988B000A2AB7 /* IntroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D180A61E21988B000A2AB7 /* IntroVC.swift */; };
-		68D180A91E21F3C0000A2AB7 /* Material.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68D180A81E21F3C0000A2AB7 /* Material.framework */; };
-		68D180AA1E21F3C0000A2AB7 /* Material.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 68D180A81E21F3C0000A2AB7 /* Material.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		68D180AC1E21F42C000A2AB7 /* MaterialTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D180AB1E21F42C000A2AB7 /* MaterialTextField.swift */; };
 		68D180AE1E21F50F000A2AB7 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D180AD1E21F50F000A2AB7 /* LoginVC.swift */; };
 		68D180B01E21F521000A2AB7 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D180AF1E21F521000A2AB7 /* SignUpVC.swift */; };
 		68D180B21E21FB29000A2AB7 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D180B11E21FB29000A2AB7 /* DataService.swift */; };
 		68D180B41E220335000A2AB7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D180B31E220335000A2AB7 /* Constants.swift */; };
 		68D180B61E2213B0000A2AB7 /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D180B51E2213B0000A2AB7 /* ForgotPasswordVC.swift */; };
+		68DA66B71E29705D001C3697 /* FadeSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DA66B61E29705D001C3697 /* FadeSegue.swift */; };
+		68DA66B91E2BD2FB001C3697 /* BlinkingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DA66B81E2BD2FB001C3697 /* BlinkingButton.swift */; };
+		68DA66BB1E2C74F8001C3697 /* FinishSignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DA66BA1E2C74F8001C3697 /* FinishSignUpVC.swift */; };
 		68F00AD71E22DDE400149253 /* Campaigns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F00AD61E22DDE400149253 /* Campaigns.swift */; };
 		68F00AD91E22E00100149253 /* CampaignCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F00AD81E22E00100149253 /* CampaignCell.swift */; };
 		68F00B1D1E234EE600149253 /* CampaignsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F00B1C1E234EE600149253 /* CampaignsVC.swift */; };
@@ -60,8 +59,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				68D180A21E219440000A2AB7 /* PaperOnboarding.framework in Embed Frameworks */,
-				68D180AA1E21F3C0000A2AB7 /* Material.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -87,16 +84,17 @@
 		68D1808C1E2191A6000A2AB7 /* FrontFlipUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrontFlipUITests.swift; sourceTree = "<group>"; };
 		68D1808E1E2191A6000A2AB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		68D1809A1E21920B000A2AB7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		68D180A01E219440000A2AB7 /* PaperOnboarding.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PaperOnboarding.framework; path = Carthage/Build/iOS/PaperOnboarding.framework; sourceTree = "<group>"; };
 		68D180A41E219497000A2AB7 /* OnboardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		68D180A61E21988B000A2AB7 /* IntroVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroVC.swift; sourceTree = "<group>"; };
-		68D180A81E21F3C0000A2AB7 /* Material.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Material.framework; path = Carthage/Build/iOS/Material.framework; sourceTree = "<group>"; };
 		68D180AB1E21F42C000A2AB7 /* MaterialTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialTextField.swift; sourceTree = "<group>"; };
 		68D180AD1E21F50F000A2AB7 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		68D180AF1E21F521000A2AB7 /* SignUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		68D180B11E21FB29000A2AB7 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		68D180B31E220335000A2AB7 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		68D180B51E2213B0000A2AB7 /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
+		68DA66B61E29705D001C3697 /* FadeSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeSegue.swift; sourceTree = "<group>"; };
+		68DA66B81E2BD2FB001C3697 /* BlinkingButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlinkingButton.swift; sourceTree = "<group>"; };
+		68DA66BA1E2C74F8001C3697 /* FinishSignUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinishSignUpVC.swift; sourceTree = "<group>"; };
 		68F00AD61E22DDE400149253 /* Campaigns.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Campaigns.swift; sourceTree = "<group>"; };
 		68F00AD81E22E00100149253 /* CampaignCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampaignCell.swift; sourceTree = "<group>"; };
 		68F00B1C1E234EE600149253 /* CampaignsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampaignsVC.swift; sourceTree = "<group>"; };
@@ -113,9 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68D180A11E219440000A2AB7 /* PaperOnboarding.framework in Frameworks */,
 				7AE3F7D822CA18368B8C5027 /* Pods_FrontFlip.framework in Frameworks */,
-				68D180A91E21F3C0000A2AB7 /* Material.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,8 +150,6 @@
 		68D180601E2191A5000A2AB7 = {
 			isa = PBXGroup;
 			children = (
-				68D180A81E21F3C0000A2AB7 /* Material.framework */,
-				68D180A01E219440000A2AB7 /* PaperOnboarding.framework */,
 				68D1806B1E2191A6000A2AB7 /* FrontFlip */,
 				68D180801E2191A6000A2AB7 /* FrontFlipTests */,
 				68D1808B1E2191A6000A2AB7 /* FrontFlipUITests */,
@@ -223,6 +217,7 @@
 				68D180AF1E21F521000A2AB7 /* SignUpVC.swift */,
 				68D180B51E2213B0000A2AB7 /* ForgotPasswordVC.swift */,
 				68F00B1C1E234EE600149253 /* CampaignsVC.swift */,
+				68DA66BA1E2C74F8001C3697 /* FinishSignUpVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -236,6 +231,8 @@
 				68D180AB1E21F42C000A2AB7 /* MaterialTextField.swift */,
 				68F00AD81E22E00100149253 /* CampaignCell.swift */,
 				68F00B1E1E2369AB00149253 /* ShadowView.swift */,
+				68DA66B61E29705D001C3697 /* FadeSegue.swift */,
+				68DA66B81E2BD2FB001C3697 /* BlinkingButton.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -275,6 +272,7 @@
 				EEE42FF44242B6225A397878 /* [CP] Embed Pods Frameworks */,
 				A0556468E09917463A740EEE /* [CP] Copy Pods Resources */,
 				68D180A31E219440000A2AB7 /* Embed Frameworks */,
+				68239EF71E2DB01E00BFF221 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -339,6 +337,7 @@
 				TargetAttributes = {
 					68D180681E2191A5000A2AB7 = {
 						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = X38TW2DP8X;
 						ProvisioningStyle = Automatic;
 					};
 					68D1807C1E2191A6000A2AB7 = {
@@ -416,6 +415,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FrontFlipUITests/Pods-FrontFlipUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		68239EF71E2DB01E00BFF221 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
 		};
 		734C6446DD71302F732975E8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -548,15 +560,18 @@
 				68D180A51E219497000A2AB7 /* OnboardingView.swift in Sources */,
 				68D1806F1E2191A6000A2AB7 /* OnboardingVC.swift in Sources */,
 				68D180AE1E21F50F000A2AB7 /* LoginVC.swift in Sources */,
+				68DA66B71E29705D001C3697 /* FadeSegue.swift in Sources */,
 				68D180B61E2213B0000A2AB7 /* ForgotPasswordVC.swift in Sources */,
 				68F00AD91E22E00100149253 /* CampaignCell.swift in Sources */,
 				68F00B1F1E2369AB00149253 /* ShadowView.swift in Sources */,
 				68D180AC1E21F42C000A2AB7 /* MaterialTextField.swift in Sources */,
+				68DA66B91E2BD2FB001C3697 /* BlinkingButton.swift in Sources */,
 				68D180A71E21988B000A2AB7 /* IntroVC.swift in Sources */,
 				68D1806D1E2191A6000A2AB7 /* AppDelegate.swift in Sources */,
 				68D180B21E21FB29000A2AB7 /* DataService.swift in Sources */,
 				68F00B1D1E234EE600149253 /* CampaignsVC.swift in Sources */,
 				68F00AD71E22DDE400149253 /* Campaigns.swift in Sources */,
+				68DA66BB1E2C74F8001C3697 /* FinishSignUpVC.swift in Sources */,
 				68D180B41E220335000A2AB7 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -708,6 +723,7 @@
 			baseConfigurationReference = 0B796C284D1A2DEE57A87405 /* Pods-FrontFlip.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = X38TW2DP8X;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -725,6 +741,7 @@
 			baseConfigurationReference = 932F1A0E0F451B139A6F590D /* Pods-FrontFlip.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = X38TW2DP8X;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",

@@ -4,19 +4,22 @@
 //
 //  Created by Menan on 2017-01-07.
 //  Copyright © 2017 Frontflip. All rights reserved.
-//
+//  Custom Material TextField
 
 import UIKit
 import Material
 
+
+//Inheirts from the Material by CosmicMind Framework
 class MaterialTextField: TextField {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    */
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+                // Set the color of the material textfield to grey
+                self.placeholderNormalColor = Color.grey.base
+                self.placeholderActiveColor = Color.grey.base
+                self.dividerNormalColor = Color.grey.base
+                self.dividerActiveColor = Color.grey.base   }
 
 }

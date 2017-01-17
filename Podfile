@@ -12,6 +12,7 @@ target 'FrontFlip' do
   pod 'Firebase/Storage'
   pod 'SwiftKeychainWrapper'
   pod 'FBSDKLoginKit'
+  pod 'paper-onboarding', '~> 2.0.1'
   target 'FrontFlipTests' do
     inherit! :search_paths
     # Pods for testing
