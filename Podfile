@@ -13,6 +13,7 @@ target 'FrontFlip' do
   pod 'SwiftKeychainWrapper'
   pod 'FBSDKLoginKit'
   pod 'paper-onboarding', '~> 2.0.1'
+  pod 'Material', '~> 2.0'
   target 'FrontFlipTests' do
     inherit! :search_paths
     # Pods for testing

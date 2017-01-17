@@ -7,7 +7,7 @@
 //  OnboardingView that inhierts from PaperOnboarding
 
 import UIKit
-import PaperOnboarding
+import paper_onboarding
 
 
 //Onboarding View inheirts PaperOnboarding

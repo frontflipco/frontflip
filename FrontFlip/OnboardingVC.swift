@@ -8,7 +8,7 @@
 // This file implements the PaperOnBoarding Framework
 
 import UIKit
-import PaperOnboarding
+import paper_onboarding
 
 class OnboardingVC: UIViewController, PaperOnboardingDelegate, PaperOnboardingDataSource {
 

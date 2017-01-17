@@ -54,6 +54,9 @@ PODS:
     - GoogleToolboxForMac/NSString+URLArguments (= 2.1.0)
   - GoogleToolboxForMac/NSString+URLArguments (2.1.0)
   - GTMSessionFetcher/Core (1.1.7)
+  - Material (2.4.6):
+    - Material/Core (= 2.4.6)
+  - Material/Core (2.4.6)
   - paper-onboarding (2.0.1)
   - SwiftKeychainWrapper (3.0.1)
 
@@ -63,6 +66,7 @@ DEPENDENCIES:
   - Firebase/Core
   - Firebase/Database
   - Firebase/Storage
+  - Material (~> 2.0)
   - paper-onboarding (~> 2.0.1)
   - SwiftKeychainWrapper
 
@@ -81,9 +85,10 @@ SPEC CHECKSUMS:
   GoogleSymbolUtilities: 631ee17048aa5e9ab133470d768ea997a5ef9b96
   GoogleToolboxForMac: 2b2596cbb7186865e98cadf2b1e262d851c2b168
   GTMSessionFetcher: a1f8ed39e4fe21c68957daed472c7afbcdf29166
+  Material: 43bd91d61e86ae2b6d6574e28fcb1ed48ff813cb
   paper-onboarding: a8e001214d9ce9decf78e160b3823f396dbd51ac
   SwiftKeychainWrapper: 38952a3636320ae61bad3513cadd870929de7a4a
 
-PODFILE CHECKSUM: f0c14565a40b205c7b52bcfbd6938018d2cdd1a0
+PODFILE CHECKSUM: 14325c423cb1685195bbe8437ad4e6ff8c1ef1ce
 
 COCOAPODS: 1.2.0.beta.3
